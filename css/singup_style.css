@@ -33,10 +33,10 @@ body{
 .font-container button{
     margin-top: 1.3rem;
     height:2.5rem;
-    width:35%;
+    width:90%;
     font-size: 1.3rem;
     text-align: center;
-    background-color: rgb(217, 234, 223);
+    background-color: rgb(255, 255, 255);
     border-radius:15px;
 }
 .link-text{
@@ -45,10 +45,11 @@ body{
 }
 
 .font-container:hover{
-    transform: scale(1.2);
-    border: 3px solid black;
+    transform: scale(1.1);
+    border: 3px solid lightgray;
 }
 .home_tag{
     margin-top: 1rem;
     font-size: 3rem;
 }
+
