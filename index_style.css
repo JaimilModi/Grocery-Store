@@ -20,6 +20,15 @@
   font-weight: bold;
 }
 
+.search-bar{
+  flex: 1;
+  margin: 10px 20px;
+  padding: 10px;
+  border-radius: 1.2rem;
+  border: none;
+  font-size: 14px;
+}
+
 .navbar a{
   color:white;
   text-decoration: none;
@@ -32,15 +41,23 @@
   color: #d4ffbc;
 }
 
-.hero{
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #a8e063, #56ab2f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  color: white;
+}
+
+.hero-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  padding: 60px 12px;
-  background: linear-gradient(to right, #a8e063, #56ab2f);
-  color: white;
-  animation: slideUp 1s ease-in-out;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .hero-text {
