@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: aqua;
+    background-color: #56ab2f;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -12,7 +12,7 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .font-container{
-    background-color: yellow;
+    background-color: #a8e063;
     align-items: center;
     text-align: center;
     padding: 30px;
@@ -36,7 +36,7 @@ body{
     width:35%;
     font-size: 1.3rem;
     text-align: center;
-    background-color: greenyellow;
+    background-color: rgb(217, 234, 223);
     border-radius:15px;
 }
 .link-text{
