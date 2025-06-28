@@ -48,7 +48,7 @@
 }
 .hero {
   height: 74.7vh;
-  background: linear-gradient(to right, #aadf69, #56ab2f);
+  background: linear-gradient(to right, #edf4e5, #56ab2f);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,6 +67,7 @@
 
 .hero-text {
   max-width: 500px;
+  color: #56ab2f;
 }
 
 .hero-text h1{
