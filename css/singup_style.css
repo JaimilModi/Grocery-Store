@@ -60,4 +60,5 @@ body{
 .button-role-vendor{
     border: lightgray solid 2px;
     align-items: center;
+    justify-content:center;
 }
