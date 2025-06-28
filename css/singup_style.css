@@ -52,4 +52,9 @@ body{
     margin-top: 1rem;
     font-size: 3rem;
 }
-
+.button-role-customer{
+    border: none;
+}
+.button-role-vendor{
+    border: none;
+}
