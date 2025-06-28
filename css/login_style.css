@@ -1,78 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-body {
-  background: linear-gradient(135deg, #a8e063, #56ab2f);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.font-container {
-  background-color: #ffffffcc;
-  padding: 40px 30px;
-  border-radius: 20px;
-  width: 300px;
-  text-align: center;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.font-container:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-}
-
-.font-container h2 {
-  font-size: 24px;
-  color: #2d572c;
-  margin-bottom: 25px;
-}
-
-.font-container input {
-  width: 90%;
-  margin: 10px 0;
-  padding: 12px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 10px;
-  background-color: #f0f0f0;
-  outline: none;
-}
-
-.font-container button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  width: 40%;
-  background-color: #56ab2f;
-  color: white;
-  font-size: 1.1rem;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.font-container button:hover {
-  background-color: #3b7e1b;
-}
-
-.link-text {
-  margin-top: 1.5rem;
-  font-size: 1rem;
-}
-
-.link-text a {
-  color: #5e35b1;
-  text-decoration: none;
-}
-
-.link-text a:hover {
-  text-decoration: underline;
+body{
+    display: flex;
+    
 }

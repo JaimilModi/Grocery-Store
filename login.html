@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GroZy Grocery Store</title>
-  <link rel="stylesheet" href="css/login_style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GroZy</title>
+    <link rel="stylesheet" href="css/login_style.css">
 </head>
 <body>
-  <div class="font-container">
-    <h2>🍏 Login</h2>
-    <form action="index.html" method="post">
-      <input type="email" name="email" placeholder="Enter your Email" required />
-      <input type="password" name="password" placeholder="Enter your Password" required />
-      <button type="submit">Submit</button>
+    <div class="container">
+        <div class="form-box_login">
+            <form action="">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="forgot-link">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p>or login with Social Platforms</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                </div>
+            </form>
+        </div>
+    </div>
 
-      <p class="link-text">
-        Don't Have an Account? <a href="signup.html">Sign Up</a>
-      </p>
-        <a href="index.html">🏠</a>
-    </form>
-  </div>
+    <script src="js/login_script.js"></script>
+    <script src="https://kit.fontawesome.com/763586ea66.js" crossorigin="anonymous"></script>
 </body>
 </html>
