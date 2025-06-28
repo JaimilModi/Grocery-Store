@@ -1,0 +1,36 @@
+.logo_anchor {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.logo {
+  height: 1rem;
+  width: 1rem;
+}
+.logo:hover{
+  border:2px solid black;
+}
+
+.products {
+  margin-top: 2rem;
+  display: flex;
+  gap: 5rem;
+  justify-content: space-evenly;
+}
+.cards {
+  border-radius: 20px;
+  text-align: center;
+  background-color: wheat;
+  color: black;
+  width: 20%;
+  height: 10rem;
+  padding: 20px;
+  font-size:1.5rem;
+  transition-duration: 0.5s;
+}
+.cards:hover{
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px greenyellow;
+}
