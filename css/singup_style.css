@@ -53,8 +53,10 @@ body{
     font-size: 3rem;
 }
 .button-role-customer{
-    border: none;
+    border: lightgray solid 2px;
+    align-items: center;
+    justify-content:center;
 }
 .button-role-vendor{
-    border: none;
+    border: lightgray solid 2px;
 }
