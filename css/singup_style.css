@@ -1,64 +1,69 @@
-*{
-    margin: 0;padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: #56ab2f;
-    text-align: center;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #a8e063, #56ab2f);
     display: flex;
     justify-content: center;
-    align-items:center;
-    min-height: 100vh;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.font-container{
-    background-color: #a8e063;
     align-items: center;
-    text-align: center;
-    padding: 30px;
+    height: 100vh;
+  }
+  
+  .signup-box {
+    background: white;
+    padding: 40px 30px;
     border-radius: 20px;
-    width:300px;
-    transition-duration: 1s;
-
-}
-.font-container input{
-    margin-top: 1rem;
-    height:2rem;
-    width:90%;
-    font-size:1rem;
-    border:none;
-    border-radius:10px;
-    padding: 10px;
-}
-.font-container button{
-    margin-top: 1.3rem;
-    height:2.5rem;
-    width:90%;
-    font-size: 1.3rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     text-align: center;
-    background-color: rgb(255, 255, 255);
-    border-radius:15px;
-}
-.link-text{
-    margin-top: 2rem;
-    font-size: 1rem;
-}
-
-.font-container:hover{
-    transform: scale(1.1);
-    border: 3px solid lightgray;
-}
-.home_tag{
-    margin-top: 1rem;
-    font-size: 3rem;
-}
-.button-role-customer{
-    border: lightgray solid 2px;
-    align-items: center;
-    justify-content:center;
-}
-.button-role-vendor{
-    border: lightgray solid 2px;
-    align-items: center;
-    justify-content:center;
-}
+    width: 300px;
+    animation: popIn 0.4s ease;
+  }
+  
+  @keyframes popIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  .signup-box h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #2d572c;
+  }
+  
+  .signup-box button {
+    background-color: #56ab2f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .signup-box button:hover {
+    background-color: #3b7e1b;
+  }
+  
+  .signup-box p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .signup-box a {
+    color: #5e35b1;
+    text-decoration: none;
+  }
+  
+  .signup-box a:hover {
+    text-decoration: underline;
+  }
+  
+  .home-icon {
+    font-size: 32px;
+    margin-top: 25px;
+  }
+  

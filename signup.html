@@ -1,44 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joyful Grocery Store</title>
-    <link rel="stylesheet" href="css/singup_style.css" />
-  </head>
-  <body>
-    <div class="font-container">
-      <h2>🍏 Sign Up</h2>
-      <form action="index.html" method="post">
-        <div class="sign_in_options">
-          <button type="button" class="button-role-customer">
-            Continue as Customer
-          </button><br>
-          <button type="button" class="button-role-vendor">
-            Continue as Vendor
-          </button>
-        </div>
-        <!-- <input type="text" name="name" placeholder="Enter your Name" required />
-        <br />
-        <input
-          type="email"
-          name="email"
-          placeholder="Enter your Email"
-          required
-        />
-        <br />
-        <input
-          type="password"
-          name="password"
-          placeholder="Enter your Password"
-          required
-        /> -->
-        <p class="link-text">
-          Already have an account? <a href="login.html">Login</a>
-        </p>
-        <!-- <button type="submit">Submit</button> -->
-        <p class="home_tag"><a href="index.html">🏠</a></p>
-      </form>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="css/singup_style.css"/>
+</head>
+<body>
+  <div class="signup-box">
+    <h1>🍏 Sign Up</h1>
+    <button onclick="location.href='customer.html'">Continue as Customer</button>
+    <button onclick="location.href='vendor.html'">Continue as Vendor</button>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+    <div class="home-icon">🏡</div>
+  </div>
 </body>
 </html>
