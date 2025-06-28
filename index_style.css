@@ -1,10 +1,17 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E9F9F1;
+  font-family: 'Nunito', sans-serif;
+  color: #1b3a1b;
 }
 
 .main-header {
-  background-color: #56ab2f;
+  background-color: #00B894;
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
@@ -25,40 +32,44 @@
   width: 250px;
   padding: 10px;
   border-radius: 1.2rem;
-  border: none;
+  border: 2px solid #ffffff;
   font-size: 14px;
+  background-color: #ffffff;
+  color: #1b3a1b;
 }
 
-.logo_anchor{
+.logo_anchor {
   text-decoration: none;
   font-weight: bold;
   font-size: 30px;
   color: white;
 }
 
-.navbar a{
-  color:white;
+.navbar a {
+  color: white;
   text-decoration: none;
   margin-left: 20px;
   font-weight: 500;
   transition: color 0.3s;
 }
 
-.navbar a:hover{
-  color: #d4ffbc;
+.navbar a:hover {
+  color: #e7ffd6;
 }
-.logo{
-  height:5rem;
-  width:5rem;
+
+.logo {
+  height: 5rem;
+  width: 5rem;
 }
+
 .hero {
   height: 74.7vh;
-  background: linear-gradient(to right, #edf4e5, #56ab2f);
+  background-color: #E9F9F1; 
+  /* background: linear-gradient(to right, #f5fff0, #e7ffd6); */
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px;
-  color: white;
 }
 
 .hero-content {
@@ -72,86 +83,100 @@
 
 .hero-text {
   max-width: 500px;
-  color: #56ab2f;
 }
 
-.hero-text h1{
+.hero-text h1,
+.hero-text h2 {
   font-size: 36px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  color: #1b3a1b;
 }
 
-.hero-text p{
+.hero-text p {
   font-size: 16px;
   margin-bottom: 30px;
 }
 
-.cta-button{
-  background-color: white;
-  color: #56ab2f;
+.cta-button {
+  background-color: #00B894;
+  color: #f5fff0;
   padding: 12px 25px;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .cta-button:hover {
-  background-color: #d4ffbc;
+  background-color: #52E0C4;
+  color: white;
 }
 
-.hero-img{
+.hero-img {
   width: 300px;
   max-width: 100%;
   animation: popIn 1.3s ease;
 }
 
 .chatbot-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: blue;
-    color: white;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1b3a1b;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.chatbot-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 4px 10px rgba(19, 224, 12, 0.2);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
   }
-  
-  .chatbot-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 1px 4px 10px rgba(19, 224, 12, 0.2);
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  @keyframes slideUp {
-    from { opacity: 0; transform: translateY(50px); }
-    to { opacity: 1; transform: translateY(0); }
+  .header-right {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
   }
-  
-  @keyframes popIn {
-    from { opacity: 0; transform: scale(0.8); }
-    to { opacity: 1; transform: scale(1); }
+
+  .search-bar {
+    width: 100%;
+    margin-top: 10px;
   }
-  @media (max-width: 768px) {
-    .main-header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .header-right {
-      flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
-    }
-  
-    .search-bar {
-      width: 100%;
-      margin-top: 10px;
-    }
-  }
-  
+}
