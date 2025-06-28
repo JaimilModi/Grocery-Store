@@ -3,21 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joyful Grocery Store</title>
+    <title>GroZy Grocery Store</title>
     <meta name="theme-color" content="#134633" />
     <link rel="stylesheet" href="index_style.css" />
   </head>
   <body>
     <header class="main-header">
-      <div class="logo"><a class="logo_anchor" href="index.html"><img class="logo" src="images/logo.png"></a></div>
-      <input type="text" placeholder="Search groceries..." class="search-bar" />
-      <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="product.html">Products</a>
-        <a href="login.html">Login</a>
-        <a href="signup.html">Sign Up</a>
-      </nav>
+      <div class="logo">
+        <a class="logo_anchor" href="index.html">
+          <img class="logo" src="images/logo.png">
+        </a>
+      </div>
+    
+      <div class="header-right">
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="product.html">Products</a>
+          <a href="login.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+        </nav>
+        <input type="text" placeholder="Search groceries..." class="search-bar" />
+      </div>
     </header>
+    
     <section class="hero">
       <div class="hero-content">
         <div class="hero-text">
@@ -31,9 +39,6 @@
         </div>
       </div>
     </section>
-
-   
-
     <div class="chatbot-btn" title="Chat with us">💬</div>
     <script src="script.js"></script>
   </body>
