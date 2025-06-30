@@ -15,24 +15,88 @@
 } */
 
 .products {
-  margin-top: 2rem;
-  display: flex;
-  gap: 5rem;
-  justify-content: space-evenly;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 0 2rem;
+  max-width: 1300px;
 }
+
 .cards {
-  border-radius: 20px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 1rem;
   text-align: center;
-  background-color: wheat;
-  color: black;
-  width: 20%;
-  height: 10rem;
-  padding: 20px;
-  font-size:1.5rem;
-  transition-duration: 0.5s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
 }
-.cards:hover{
-  transform: scale(1.1);
-  box-shadow: 4px 4px 5px #00b894;
+
+.cards:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.cards img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.cards h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #1b3a1b;
+}
+
+.cards p {
+  color: #555;
+  font-weight: bold;
+}
+
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.navbar {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 7px 14px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.add-btn {
+  margin-top: 0.8rem;
+  padding: 8px 16px;
+  background-color: #e0f9ee;
+  color: #00b894;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn i {
+  font-size: 16px;
+}
+
+.add-btn:hover {
+  background-color: #ccf3e3;
   cursor: pointer;
 }
