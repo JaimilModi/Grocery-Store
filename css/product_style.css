@@ -9,9 +9,10 @@
   height: 1rem;
   width: 1rem;
 }
-.logo:hover{
+
+/* .logo:hover{
   border:2px solid black;
-}
+} */
 
 .products {
   margin-top: 2rem;
