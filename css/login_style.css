@@ -1,1 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: "Nunito", sans-serif;
+}
+body{
+    background-color: #e9f9f1;
+    background:linear-gradient(to right,#e2e2e2,#c9f8ff);
+}
