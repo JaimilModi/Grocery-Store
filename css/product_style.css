@@ -1,81 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #e9f9f1;
-  font-family: "Nunito", sans-serif;
-  color: #1b3a1b;
-}
-
-.main-header {
-  background-color: #00b894;
-  padding: 10px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  animation: slideDown 0.8s ease-out;
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
 .logo_anchor {
   text-decoration: none;
   font-weight: bold;
   font-size: 30px;
   color: white;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.navbar a:hover {
-  color: #e7ffd6;
-}
-
-.search-bar {
-  width: 250px;
-  padding: 8px;
-  border-radius: 1.2rem;
-  border: 2px solid #ffffff;
-  font-size: 14px;
-  background-color: #ffffff;
-  color: #1b3a1b;
 }
 
 .logo {
-  height: 4rem;
-  width: 4rem;
-}
-
-.logo_anchor {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-}
-
-/* .logo {
   height: 1rem;
   width: 1rem;
-} */
+}
 .logo:hover{
-  border:0.2px solid #00b894;
+  border:2px solid black;
 }
 
 .products {
@@ -98,26 +33,4 @@ body {
 .cards:hover{
   transform: scale(1.1);
   box-shadow: 2px 2px 5px greenyellow;
-}
-.chatbot-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #1b3a1b;
-  color: white;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  font-size: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s;
-}
-
-.chatbot-btn:hover {
-  transform: scale(1.1);
-  box-shadow: 1px 4px 10px rgba(19, 224, 12, 0.2);
 }

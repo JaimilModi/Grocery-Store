@@ -116,6 +116,7 @@ body {
 .cta-button:hover {
   background-color: #52e0c4;
   color: white;
+  cursor: pointer;
 }
 
 .chatbot-btn {
