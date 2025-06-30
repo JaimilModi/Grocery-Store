@@ -33,5 +33,5 @@
 }
 .cards:hover{
   transform: scale(1.1);
-  box-shadow: 2px 2px 5px greenyellow;
+  box-shadow: 4px 4px 5px #00b894;
 }
