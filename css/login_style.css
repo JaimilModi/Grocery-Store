@@ -12,7 +12,7 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
-    flex-direction:colums;
+    flex-direction:column;
     height:100vh;
 }
 .container{
@@ -52,4 +52,23 @@ body{
     text-transform:uppercase;
     margin-top:10px;
     cursor:pointer;
+}
+.container button.hidden{
+    background-color:transparent;
+    border-color:#fff;
+}
+.container form{
+    background-color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    padding:0 40px;
+    height:100%;
+}
+.container input{
+    background-color:#eee;
+    border:none;
+    margin:8px 0;
+    padding:10px 15px;
 }
