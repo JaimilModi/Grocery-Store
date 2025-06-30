@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>GroZy Grocery Store</title>
+    <link rel="stylesheet" href="css/signup_style.css" />
+  </head>
+  <body>
+    <div class="signup-wrapper">
+      <h2>Create Your GroZy Account</h2>
+      <div class="role-toggle">
+        <button id="customerBtn" class="active">Customer</button>
+        <button id="vendorBtn">Vendor</button>
+      </div>
+
+      <form id="signupForm">
+        <div class="common-fields">
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+        </div>
+
+        <div class="customer-fields">
+          <input type="text" placeholder="Delivery Address" />
+          <input type="text" placeholder="Phone Number" />
+        </div>
+
+        <div class="vendor-fields" style="display: none">
+          <input type="text" placeholder="Shop Name" />
+          <input type="text" placeholder="Business Address" />
+          <input type="text" placeholder="GST Number (Optional)" />
+        </div>
+
+        <button type="submit">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+      <div class="home-button-wrapper">
+        <a class="home-button" href="index.html">
+          <i class="fa-solid fa-house"></i> Back to Home
+        </a>
+      </div>      
+    </div>
+    <script src="js/signup_script.js"></script>
+  </body>
+</html>

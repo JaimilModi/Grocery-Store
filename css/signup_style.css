@@ -1,27 +1,51 @@
 body {
-  font-family: "Nunito", sans-serif;
   background-color: #e9f9f1;
+  font-family: "Nunito", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.login-container {
-  background: #ffffff;
-  padding: 30px 40px;
+.signup-wrapper {
+  background: #fff;
+  padding: 35px 45px;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  animation: fadeIn 1s ease;
+  width: 400px;
+  animation: slideUp 0.8s ease;
 }
 
-.login-container h2 {
+.signup-wrapper h2 {
+  text-align: center;
   color: #007f5f;
   margin-bottom: 20px;
 }
 
-.login-container input {
+.role-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.role-toggle button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #e0f7ec;
+  color: #007f5f;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.role-toggle button.active {
+  background-color: #00b894;
+  color: white;
+}
+
+.signup-wrapper input {
   width: 100%;
   padding: 12px;
   margin: 10px 0;
@@ -30,41 +54,49 @@ body {
   font-size: 16px;
 }
 
-.login-container button {
+.signup-wrapper button[type="submit"] {
+  width: 100%;
   background-color: #00b894;
   color: white;
-  padding: 12px 20px;
+  padding: 12px;
+  margin-top: 10px;
   border: none;
   border-radius: 25px;
-  cursor: pointer;
   font-size: 16px;
+  cursor: pointer;
   transition: 0.3s;
 }
 
-.login-container button:hover {
+.signup-wrapper button[type="submit"]:hover {
   background-color: #019875;
 }
 
-@keyframes fadeIn {
+@keyframes slideUp {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-.home-button {
-  display: inline-block;
+.home-button-wrapper {
+  display: flex;
+  justify-content: center;
   margin-top: 15px;
+}
+
+.home-button {
   text-decoration: none;
   font-weight: bold;
   color: #00b894;
   background-color: #e0f7ec;
-  padding: 10px 15px;
+  padding: 10px 20px;
   border-radius: 30px;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
 }
 
 .home-button i {
