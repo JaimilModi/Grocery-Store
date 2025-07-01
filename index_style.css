@@ -103,6 +103,17 @@ body {
   animation: popIn 1s ease;
 }
 
+@media (max-width: 768px) {
+  .about-section h1 {
+    font-size: 2rem;
+  }
+
+  .about-section p {
+    font-size: 16px;
+  }
+}  
+
+
 .cta-button {
   background-color: #00b894;
   color: #f5fff0;
