@@ -181,8 +181,25 @@ body {
 .delay-4 {
   animation-delay: 1.2s;
 }
+
+.delay-4-1{
+  animation-delay: 1.4s;
+}
+
+.delay-4-2{
+  animation-delay: 1.6s;
+}
+
+.delay-4-3{
+  animation-delay: 1.8s;
+}
+
+.delay-4-4{
+  animation-delay: 2s;
+}
+
 .delay-5{
-  animation-delay: 1.5s;
+  animation-delay: 2.3s;
 }
 
 @keyframes slideUp {
