@@ -39,7 +39,10 @@ body {
   border-radius: 10px;
   transition: 0.3s;
 }
-
+.animation:hover{
+  transition-duration: 1s;
+  transform: scale(1.05);
+}
 .role-toggle button.active {
   background-color: #00b894;
   color: white;
