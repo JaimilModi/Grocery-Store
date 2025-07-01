@@ -17,6 +17,11 @@
   margin-bottom: 30px;
 }
 
+.about-section .emoji {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
 @media (max-width: 768px) {
   .about-section h1 {
     font-size: 2rem;
@@ -25,4 +30,4 @@
   .about-section p {
     font-size: 16px;
   }
-}   
+}
