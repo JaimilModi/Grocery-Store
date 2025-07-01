@@ -100,18 +100,25 @@ body {
 .hero-img {
   width: 300px;
   max-width: 100%;
-  animation: popIn 1s ease;
 }
 
 @media (max-width: 768px) {
-  .about-section h1 {
-    font-size: 2rem;
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .about-section p {
-    font-size: 16px;
+  .hero-text {
+    margin-bottom: 20px;
   }
-}  
+
+  .hero-img {
+    margin-top: 20px;
+    width: 250px;
+    max-width: 90%;
+    height: auto;
+  }
+}
 
 
 .cta-button {
