@@ -10,9 +10,6 @@
   width: 1rem;
 }
 
-/* .logo:hover{
-  border:2px solid black;
-} */
 
 .products {
   margin: 2rem auto;
@@ -33,9 +30,10 @@
 }
 
 .cards:hover {
-  background-color: #fcfbfb;
+  background-color: #fffefe;
   transform: translateY(-5px);
   cursor: pointer;
+  border: 1px solid #00b894;
 }
 
 .cards img {
